@@ -50,17 +50,19 @@
 
                 <div class="radiobox">
                     <label class="container">Lógica de programação
-                        <input type="radio" checked="checked" value="1">
+                        <input type="radio" id="radio1" value="1" name="opcoes">
                         <span class="radiomark"></span>
                     </label>
                     
                     <label class="container">Jogo da velha
-                        <input type="radio" value="2">
+                        <input type="radio" name="opcoes" id="radio2" value="2">
                         <span class="radiomark"></span>
                     </label>
                 </div>
 
-                <button>Confirmar</button>
+                <div class="btn">
+                    <button onclick="verificarEscolha()" class="btn-opces" disabled="true">Confirmar</button>
+                </div>
 
                 <article id="jogodavelha">
                     <p class="codepen" data-height="600" data-theme-id="dark" data-default-tab="result" data-slug-hash="eYVNmMG" data-user="Yuri_Abe" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">

@@ -184,6 +184,38 @@ header nav h1 > em{
     background-color: #eee;
 }
 
+#opces .btn-opcoes {
+    width: 160px;
+    height: 50px;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    color: var(--black);
+
+    border: none;
+    border-radius: 16px;
+    
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+#opcoes .btn-opcoes:hover {
+    background-color: var(--black);
+    color: white;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.397);
+
+    transition-delay: .2s;
+    transform: translateY(-15px);
+}
+
+#opcoes .btn-opcoes:disabled{
+    
+    transition-delay: .2s;
+    transform: translateY(-15px);
+}
 
 #opcoes #jogodavelha {
     visibility: hidden;
