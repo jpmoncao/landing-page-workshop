@@ -1,8 +1,17 @@
+function mostrarOpcoes() {
+
+    (document.getElementById("opcoes")).style.visibility = "visible";
+
+    (document.getElementById("levels")).style.visibility = "hidden";
+
+    (document.getElementById("card")).style.visibility = "hidden";
+}
+
 function mostrarLevels() {
 
-    const elementCard = document.getElementById("card");
-    elementCard.style.visibility = "hidden";
+    (document.getElementById("opcoes")).style.visibility = "hidden";
 
-    const elementLevels = document.getElementById("levels");
-    elementLevels.style.visibility = "visible";
+    (document.getElementById("levels")).style.visibility = "visible";
+
+    (document.getElementById("card")).style.visibility = "hidden";
 }

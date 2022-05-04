@@ -19,8 +19,8 @@
     </header>
 
     <main>
-        <section id="card">
-            <section class="card">
+        <section >
+            <section id="card" class="card">
                 <h1>O que é programação?</h1>
                 <p>Com o passar dos anos, o homem desenvolveu uma forma de se "comunicar" com as máquinas, através da programação. Os computadores usam interpretadores, que são uma espécie de tradutor de código para binário (linguagem compreendida pelas máquinas). </p>
                 <p>
@@ -34,7 +34,7 @@
                 <p>A lógica de programação é um conjunto de técnicas e processos usados na programação. A importância de dominar esse conceito, é que uma vez compreendido o grande dilema dos algoritmos, todas as linguagens passam a ser semelhantes. </p>
                 <p>Um dos componentes do curso é exatamente isso, a compreensão da lógica de programação.</p>
                 <div class="btn">
-                    <button onclick='mostrarOpcoes()'>próximo</button>
+                    <button onclick="mostrarOpcoes()">próximo</button>
                 </div>
             </section>
 
@@ -47,15 +47,31 @@
 
             <section id="opcoes" class="card">
                 <h1>Escolha um jogo</h1>
-                <input type="radio"> Lógica de programação
-                <input type="radio"> Jogo da velha
-                <p class="codepen" data-height="600" data-theme-id="dark" data-default-tab="result" data-slug-hash="eYVNmMG" data-user="Yuri_Abe" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                    <span>See the Pen <a href="https://codepen.io/Yuri_Abe/pen/eYVNmMG">
-                    Jogo Da Velha </a> by Yuri Ribeiro Abe (<a href="https://codepen.io/Yuri_Abe">@Yuri_Abe</a>)
-                    on <a href="https://codepen.io">CodePen</a>.</span>
-                  </p>
-                  <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+                <div class="radiobox">
+                    <label class="container">Lógica de programação
+                        <input type="radio" checked="checked" value="1">
+                        <span class="radiomark"></span>
+                    </label>
+                    
+                    <label class="container">Jogo da velha
+                        <input type="radio" value="2">
+                        <span class="radiomark"></span>
+                    </label>
+                </div>
+
+                <button>Confirmar</button>
+
+                <article id="jogodavelha">
+                    <p class="codepen" data-height="600" data-theme-id="dark" data-default-tab="result" data-slug-hash="eYVNmMG" data-user="Yuri_Abe" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <span>See the Pen <a href="https://codepen.io/Yuri_Abe/pen/eYVNmMG">
+                        Jogo Da Velha </a> by Yuri Ribeiro Abe (<a href="https://codepen.io/Yuri_Abe">@Yuri_Abe</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                      </p>
+                      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                </article>
             </section>
+
         </section>
     </main>
 </body>
