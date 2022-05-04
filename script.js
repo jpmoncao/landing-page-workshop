@@ -20,3 +20,7 @@ function mostrarJogoDaVelha() {
     (document.getElementById("jogodavelha")).style.visibility = "visible"
 
 }
+
+function mostrarOpcoesDificil() {
+    (document.getElementById("dificil-opcoes").style.visibility = "visible")
+}

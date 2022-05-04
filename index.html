@@ -47,14 +47,28 @@
             </section>
 
             <section id="levels" class="card">
+                
                 <h1>Escolha seu nível</h1>
-                <a href="https://github.com/jpmoncao/"><button class="btn-green">FÁCIL</button></a>
-                <a href="https://jpmoncao.github.io/projeto-android/"><button class="btn-yellow"
-                        button>MÉDIO</button></a>
-                <a
-                    href="https://www.google.com/search?q=l%C3%A9o+ladr%C3%A3o+roubou+meu+cora%C3%A7%C3%A3o&oq=l%C3%A9o+ladr%C3%A3o+roubou+meu+cora%C3%A7%C3%A3o&aqs=chrome..69i57.6376j1j7&sourceid=chrome&ie=UTF-8"><button
-                        class="btn-red">DÍFICIL</button></a>
+
+                <a target="_blank" href="https://studio.code.org/s/course2/lessons/3/levels/1">
+                    <button class="btn-green" >FÁCIL</button>
+                </a>
+                <a target="_blank" href="https://studio.code.org/s/mc/lessons/1/levels/1">
+                    <button class="btn-yellow" >MÉDIO</button>
+                </a>
+                <button class="btn-red" onclick="mostrarOpcoesDificil()">DIFÍCIL</button>
+
+                <div id="dificil-opcoes">
+                    <a href="https://studio.code.org/s/course2/lessons/19/levels/1?lang=pt-BR">
+                        <button>1</button>
+                    </a>
+                    <a href="https://studio.code.org/s/course2/lessons/7/levels/1">
+                        <button>2</button>
+                    </a>
+                </div>
             </section>
+
+            
 
             <section id="opcoes" class="card">
                 <h1>Escolha um jogo</h1>
@@ -64,6 +78,8 @@
                     <button onclick="mostrarJogoDaVelha()">Jogo da velha</button>
                 </div>
 
+                
+
                 <article id="jogodavelha">
                     <p class="codepen" data-height="550" data-theme-id="dark" data-default-tab="result"
                         data-slug-hash="eYVNmMG" data-user="Yuri_Abe"
@@ -71,6 +87,7 @@
                     </p>
                     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
                 </article>
+
             </section>
 
         </section>

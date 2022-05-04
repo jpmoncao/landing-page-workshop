@@ -67,9 +67,6 @@ header nav h1 > em{
     top: 80px;
     transform: translateX(-50%);
     
-    margin: 0px auto;
-    margin-top: 3px;
-
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(17, 25, 40, 0.75);
@@ -202,17 +199,20 @@ header nav h1 > em{
 
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 20px;
     align-items: center;
+
+    z-index: 100;
+
 }
 
 #levels h1 {
-    font-size: 2.5em;
+    font-size: 2.2em;
 }
 
 #levels button {
     padding: 20px;
-    width: 220px;
+    width: 200px;
 
     font: bold normal 1.1em 'Poppins', sans-serif;
     color: white;
@@ -254,6 +254,54 @@ header nav h1 > em{
 }
 
 #levels .btn-red:hover {
+    transform: scale(110%);
     background-color: rgb(209, 22, 78);
 }
 
+#levels .btn-red:focus {
+    background-color: rgb(238, 200, 211);
+    border: 2px solid rgb(189, 146, 158);
+    color: rgb(209, 22, 78);
+    transform: translateY(30px);
+}
+
+#levels .btn-red:active {
+    transform: translateY(-10px);
+    transition: .5s;
+}
+
+
+#dificil-opcoes {
+    visibility: hidden;
+}
+
+#dificil-opcoes button{
+    z-index: 1000;
+
+
+    padding: 10px;
+    margin-right: 15px;
+    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+
+    font: bold normal 1em 'Poppins', sans-serif;
+    background-color: rgb(209, 22, 78);
+    color: rgb(238, 200, 211);
+
+    border-radius: 50%;
+    border: none;
+
+    transition-duration: .5s;
+}
+
+#dificil-opcoes button:hover {
+    transform: scale(110%);
+    transition-duration: .5s;
+    transition-delay: .2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
