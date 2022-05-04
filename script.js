@@ -1,6 +1,8 @@
 function mostrarLevels() {
-    const elementCard = document.getElementsByClassName("card");
-    const converted = { ".card": { visibility: "hidden" } }
 
-    elementCard.style = converted
+    const elementCard = document.getElementById("card");
+    elementCard.style.visibility = "hidden";
+
+    const elementLevels = document.getElementById("levels");
+    elementLevels.style.visibility = "visible";
 }

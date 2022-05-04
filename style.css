@@ -6,6 +6,10 @@
     --cor03: #012E40;
     --cor04: #192E59;
     --black: #09111C;
+
+    --green: rgba(51, 228, 131, 0.5);
+    --yellow: rgb(220, 223, 61, 0.5);
+    --red: rgba(209, 22, 78, 0.5);
 }
 
 * {
@@ -19,6 +23,8 @@ body {
     background-image: url('https://www.showmetech.com.br/wp-content/uploads//2018/11/conheca-cursos-de-programacao-gratis-1132x600.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+
+    height: 100vh;
 }
 
 header {
@@ -69,6 +75,7 @@ header nav h1 > em{
 
 .card h1 {
     font-family: 'Poppins', sans-serif;
+    font-size: 2.2em;
     color: white;
     
     text-align: center;
@@ -121,4 +128,72 @@ header nav h1 > em{
     transform: translateY(-15px);
 }
 
+#card {
+    /*visibility: hidden;*/
+}
+
+#levels {
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    transform: translateX(-50%);
+
+    visibility: hidden;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+#levels h1 {
+    font-size: 2.5em;
+}
+
+#levels button {
+    padding: 20px;
+    width: 220px;
+
+    font: bold normal 1.1em 'Poppins', sans-serif;
+    color: white;
+
+    border-radius: 36px;
+
+    transition-duration: .5s;
+}
+
+#levels a button:hover {
+    transform: scale(110%);
+    transition-duration: .5s;
+    transition-delay: .2s;
+}
+
+#levels .btn-green{
+    background-color: var(--green);
+    border: 2px solid rgba(51, 228, 131);
+}
+
+#levels .btn-yellow{
+    background-color: var(--yellow);
+    border: 2px solid rgb(220, 223, 61, 0.5);
+}
+
+#levels .btn-red{
+    background-color: var(--red);
+    border: 2px solid rgb(209, 22, 78);
+}
+
+
+
+#levels .btn-green:hover {
+    background-color: rgba(51, 228, 131);
+}
+
+#levels .btn-yellow:hover {
+    background-color: rgb(220, 223, 61);
+}
+
+#levels .btn-red:hover {
+    background-color: rgb(209, 22, 78);
+}
 
