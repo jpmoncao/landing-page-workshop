@@ -27,7 +27,7 @@ body {
 }
 
 header {
-    background-color: var(--black);
+    background-color: var(--black); 
 }
 
 header nav {
@@ -40,8 +40,12 @@ header nav {
     color: white;
 }
 
+header nav a:visited {
+    color: white;
+}
+
 header nav h1{
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 header nav img {
@@ -64,23 +68,24 @@ header nav h1 > em{
     transform: translateX(-50%);
     
     margin: 0px auto;
-    margin-top: 20px;
+    margin-top: 3px;
 
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(17, 25, 40, 0.75);
-    border-radius: 12px;
+    border-radius: 0px 0px 12px 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
 
     width: 65vw;
-    height: 90vh;
+    height: 85vh;
 
-    padding: 50px 80px;
+    padding: 40px 70px;
+    
 }
 
 .card h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 2.5em;
+    font-size: 1.8em;
     color: white;
     
     text-align: center;
@@ -89,7 +94,7 @@ header nav h1 > em{
 
 .card p {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.2em;
+    font-size: 0.9em;
     color: white;
     text-align: justify;
     text-indent: 2.5cm;
@@ -100,7 +105,7 @@ header nav h1 > em{
     flex-direction: column;
     align-items: center;
 
-    margin-top: 10vh;
+    margin-top: 8vh;
 }
 
 .card .btn button {
@@ -143,50 +148,9 @@ header nav h1 > em{
     margin-bottom: 15px;
 }
 
-.radiobox {
-    margin-top: 120px;
-}
-
-.container {
-    display: block;
-    position: relative;
-
-    
-    margin-bottom: 12px;
-
-    cursor: pointer;
-
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.6em;
-    text-align: center;
-}
-
-.container input {
-    margin-top: 5px;
-    opacity: 1;
-    cursor: pointer;
-    height: 20px;
-    width: 20px;
-}
-
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-}
-
-#opces .btn-opcoes {
-    width: 160px;
-    height: 50px;
+#opcoes button {
+    width: 200px;
+    height: 75px;
 
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
@@ -202,8 +166,18 @@ header nav h1 > em{
     cursor: pointer;
 }
 
-#opcoes .btn-opcoes:hover {
-    background-color: var(--black);
+#opcoes .btn-opcoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 85px;
+
+    margin-top: 50px;
+}
+
+#opcoes button:hover {
+    background-color: var(--cor02);
     color: white;
     box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.397);
 
@@ -211,14 +185,16 @@ header nav h1 > em{
     transform: translateY(-15px);
 }
 
-#opcoes .btn-opcoes:disabled{
-    
-    transition-delay: .2s;
-    transform: translateY(-15px);
-}
 
 #opcoes #jogodavelha {
     visibility: hidden;
+
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+
+    width: 55vw;
 }
 
 #levels {

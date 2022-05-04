@@ -13,25 +13,33 @@
 <body>
     <header>
         <nav>
-            <h1>Técnico em <em>Informática</em></h1>
+            <a href="https://jpmoncao.github.io/landing-page-workshop/">
+                <h1>Técnico em <em>Informática</em></h1>
+            </a>
             <img src="img/logo-etec.svg" alt="Logo Etec">
         </nav>
     </header>
 
     <main>
-        <section >
+        <section>
             <section id="card" class="card">
                 <h1>O que é programação?</h1>
-                <p>Com o passar dos anos, o homem desenvolveu uma forma de se "comunicar" com as máquinas, através da programação. Os computadores usam interpretadores, que são uma espécie de tradutor de código para binário (linguagem compreendida pelas máquinas). </p>
+                <p>Com o passar dos anos, o homem desenvolveu uma forma de se "comunicar" com as máquinas, através da
+                    programação. Os computadores usam interpretadores, que são uma espécie de tradutor de código para
+                    binário (linguagem compreendida pelas máquinas). </p>
                 <p>
-                    Os algoritmos escritos se diferenciam pelas suas diversas linguagens de programação, que assim como uma linguagem qualquer, possui um mesmo significado, porém com uma sintaxe diferente.
+                    Os algoritmos escritos se diferenciam pelas suas diversas linguagens de programação, que assim como
+                    uma linguagem qualquer, possui um mesmo significado, porém com uma sintaxe diferente.
                 </p>
                 <p>
-                    Atualmente, o mercado se renova e surge uma nova linguagem de programação, alguns exemplos são: <strong>Python, Java, Javascript, PHP, C, C++, C#, Ruby, Rust, entre outras.</strong>
+                    Atualmente, o mercado se renova e surge uma nova linguagem de programação, alguns exemplos são:
+                    <strong>Python, Java, Javascript, PHP, C, C++, C#, Ruby, Rust, entre outras.</strong>
                 </p>
                 <br>
                 <h1>O que é a lógica de programação?</h1>
-                <p>A lógica de programação é um conjunto de técnicas e processos usados na programação. A importância de dominar esse conceito, é que uma vez compreendido o grande dilema dos algoritmos, todas as linguagens passam a ser semelhantes. </p>
+                <p>A lógica de programação é um conjunto de técnicas e processos usados na programação. A importância de
+                    dominar esse conceito, é que uma vez compreendido o grande dilema dos algoritmos, todas as
+                    linguagens passam a ser semelhantes. </p>
                 <p>Um dos componentes do curso é exatamente isso, a compreensão da lógica de programação.</p>
                 <div class="btn">
                     <button onclick="mostrarOpcoes()">próximo</button>
@@ -40,37 +48,28 @@
 
             <section id="levels" class="card">
                 <h1>Escolha seu nível</h1>
-                <a href="https://github.com/jpmoncao/" ><button class="btn-green">FÁCIL</button></a>
-                <a href="https://jpmoncao.github.io/projeto-android/" ><button class="btn-yellow"button>MÉDIO</button></a>
-                <a href="https://www.google.com/search?q=l%C3%A9o+ladr%C3%A3o+roubou+meu+cora%C3%A7%C3%A3o&oq=l%C3%A9o+ladr%C3%A3o+roubou+meu+cora%C3%A7%C3%A3o&aqs=chrome..69i57.6376j1j7&sourceid=chrome&ie=UTF-8" ><button class="btn-red">DÍFICIL</button></a>
+                <a href="https://github.com/jpmoncao/"><button class="btn-green">FÁCIL</button></a>
+                <a href="https://jpmoncao.github.io/projeto-android/"><button class="btn-yellow"
+                        button>MÉDIO</button></a>
+                <a
+                    href="https://www.google.com/search?q=l%C3%A9o+ladr%C3%A3o+roubou+meu+cora%C3%A7%C3%A3o&oq=l%C3%A9o+ladr%C3%A3o+roubou+meu+cora%C3%A7%C3%A3o&aqs=chrome..69i57.6376j1j7&sourceid=chrome&ie=UTF-8"><button
+                        class="btn-red">DÍFICIL</button></a>
             </section>
 
             <section id="opcoes" class="card">
                 <h1>Escolha um jogo</h1>
 
-                <div class="radiobox">
-                    <label class="container">Lógica de programação
-                        <input type="radio" id="radio1" value="1" name="opcoes">
-                        <span class="radiomark"></span>
-                    </label>
-                    
-                    <label class="container">Jogo da velha
-                        <input type="radio" name="opcoes" id="radio2" value="2">
-                        <span class="radiomark"></span>
-                    </label>
-                </div>
-
-                <div class="btn">
-                    <button onclick="verificarEscolha()" class="btn-opces" disabled="true">Confirmar</button>
+                <div class="btn-opcoes">
+                    <button onclick="mostrarLevels()">Lógica de programação</button>
+                    <button onclick="mostrarJogoDaVelha()">Jogo da velha</button>
                 </div>
 
                 <article id="jogodavelha">
-                    <p class="codepen" data-height="600" data-theme-id="dark" data-default-tab="result" data-slug-hash="eYVNmMG" data-user="Yuri_Abe" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-                        <span>See the Pen <a href="https://codepen.io/Yuri_Abe/pen/eYVNmMG">
-                        Jogo Da Velha </a> by Yuri Ribeiro Abe (<a href="https://codepen.io/Yuri_Abe">@Yuri_Abe</a>)
-                        on <a href="https://codepen.io">CodePen</a>.</span>
-                      </p>
-                      <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                    <p class="codepen" data-height="550" data-theme-id="dark" data-default-tab="result"
+                        data-slug-hash="eYVNmMG" data-user="Yuri_Abe"
+                        style="height: 550px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em; width: 50vw;">
+                    </p>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
                 </article>
             </section>
 
